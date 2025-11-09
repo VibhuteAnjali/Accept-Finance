@@ -1,8 +1,33 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FiMail, FiTwitter, FiLinkedin, FiGithub, FiYoutube } from 'react-icons/fi';
+import PrivacyPolicy from '../PrivacyPolicy/PrivacyPolicy';
+import TermsOfService from '../TermsOfService/TermsOfService';
 import './Footer.css';
 
 const Footer = () => {
+  const [showPrivacy, setShowPrivacy] = useState(false);
+  const [showTerms, setShowTerms] = useState(false);
+
+  const handleLinkClick = (href, e) => {
+    if (href === '#privacy') {
+      e.preventDefault();
+      setShowPrivacy(true);
+      window.scrollTo(0, 0);
+    } else if (href === '#terms') {
+      e.preventDefault();
+      setShowTerms(true);
+      window.scrollTo(0, 0);
+    }
+  };
+
+  if (showPrivacy) {
+    return <PrivacyPolicy />;
+  }
+
+  if (showTerms) {
+    return <TermsOfService />;
+  }
+
   const footerLinks = {
     product: [
       { name: 'Features', href: '#features' },
@@ -66,7 +91,7 @@ const Footer = () => {
               <ul className="footer-list">
                 {footerLinks.product.map((link, index) => (
                   <li key={index}>
-                    <a href={link.href} className="footer-link">{link.name}</a>
+                    <a href={link.href} className="footer-link" onClick={(e) => handleLinkClick(link.href, e)}>{link.name}</a>
                   </li>
                 ))}
               </ul>
@@ -77,7 +102,7 @@ const Footer = () => {
               <ul className="footer-list">
                 {footerLinks.company.map((link, index) => (
                   <li key={index}>
-                    <a href={link.href} className="footer-link">{link.name}</a>
+                    <a href={link.href} className="footer-link" onClick={(e) => handleLinkClick(link.href, e)}>{link.name}</a>
                   </li>
                 ))}
               </ul>
@@ -88,7 +113,7 @@ const Footer = () => {
               <ul className="footer-list">
                 {footerLinks.support.map((link, index) => (
                   <li key={index}>
-                    <a href={link.href} className="footer-link">{link.name}</a>
+                    <a href={link.href} className="footer-link" onClick={(e) => handleLinkClick(link.href, e)}>{link.name}</a>
                   </li>
                 ))}
               </ul>
@@ -99,7 +124,7 @@ const Footer = () => {
               <ul className="footer-list">
                 {footerLinks.legal.map((link, index) => (
                   <li key={index}>
-                    <a href={link.href} className="footer-link">{link.name}</a>
+                    <a href={link.href} className="footer-link" onClick={(e) => handleLinkClick(link.href, e)}>{link.name}</a>
                   </li>
                 ))}
               </ul>
