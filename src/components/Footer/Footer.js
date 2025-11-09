@@ -21,12 +21,6 @@ const Footer = () => {
       { name: 'Careers', href: '#careers', isRoute: false },
       { name: 'Contact', href: '#contact', isRoute: false }
     ],
-    support: [
-      { name: 'Help Center', href: '#help', isRoute: false },
-      { name: 'Documentation', href: '#docs', isRoute: false },
-      { name: 'Community', href: '#community', isRoute: false },
-      { name: 'Status', href: '#status', isRoute: false }
-    ],
     legal: [
       { name: 'Privacy Policy', href: '/privacy-policy', isRoute: true },
       { name: 'Terms of Service', href: '/terms-of-service', isRoute: true },
@@ -85,21 +79,6 @@ const Footer = () => {
               <h4 className="footer-column-title">Company</h4>
               <ul className="footer-list">
                 {footerLinks.company.map((link, index) => (
-                  <li key={index}>
-                    {link.isRoute ? (
-                      <Link to={link.href} className="footer-link" onClick={handleRouteClick}>{link.name}</Link>
-                    ) : (
-                      <a href={link.href} className="footer-link">{link.name}</a>
-                    )}
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            <div className="footer-column">
-              <h4 className="footer-column-title">Support</h4>
-              <ul className="footer-list">
-                {footerLinks.support.map((link, index) => (
                   <li key={index}>
                     {link.isRoute ? (
                       <Link to={link.href} className="footer-link" onClick={handleRouteClick}>{link.name}</Link>
