@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FiMail, FiTwitter, FiLinkedin, FiGithub, FiYoutube } from 'react-icons/fi';
+import { FiMail, FiTwitter, FiLinkedin, FiGithub, FiYoutube, FiPhone, FiMapPin } from 'react-icons/fi';
 import './Footer.css';
 
 const Footer = () => {
@@ -123,6 +123,24 @@ const Footer = () => {
                     )}
                   </li>
                 ))}
+              </ul>
+            </div>
+
+            <div className="footer-column">
+              <h4 className="footer-column-title">Contact</h4>
+              <ul className="footer-list">
+                <li className="footer-contact-item">
+                  <FiPhone className="contact-icon" />
+                  <a href="tel:+14027868780" className="footer-link">+1-(402)-786-8780</a>
+                </li>
+                <li className="footer-contact-item">
+                  <FiMail className="contact-icon" />
+                  <a href="mailto:contact@quill.com" className="footer-link">contact@quill.com</a>
+                </li>
+                <li className="footer-contact-item">
+                  <FiMapPin className="contact-icon" />
+                  <span className="footer-link">2456 North Avenue, Waverly, NE 68462</span>
+                </li>
               </ul>
             </div>
           </div>
