@@ -9,7 +9,7 @@ const About = () => {
         <div className="about-header">
           <span className="section-tag">About Us</span>
           <h2 className="section-title">
-            Welcome to <span className="gradient-text">OnlineAtWork</span>
+            Welcome to <span className="gradient-text">Accept Finance</span>
           </h2>
           <p className="section-description">
             We believe the future of work is digital, flexible, and human-centered.
@@ -20,7 +20,7 @@ const About = () => {
           <div className="about-text">
             <h3 className="about-subtitle">Our Mission</h3>
             <p className="about-paragraph">
-              At OnlineAtWork.com, our mission is simple: help individuals and teams thrive 
+              At Accept Finance, our mission is simple: help individuals and teams thrive 
               while working online — whether you're collaborating across continents or from 
               your home office.
             </p>

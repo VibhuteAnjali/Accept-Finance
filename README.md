@@ -1,6 +1,6 @@
-# OnlineAtWork.com - Work Smarter, Anywhere
+# Accept Finance - Real Insights. Real Trends. Real Financial Power.
 
-A modern, futuristic ReactJS website for OnlineAtWork.com, featuring AI-inspired design and seamless user experience.
+A modern, fintech-focused ReactJS website for Accept Finance, featuring ocean green design and seamless user experience.
 
 ## 🚀 Features
 
@@ -174,11 +174,11 @@ To customize colors, update the CSS variables in each component's CSS file. The 
 
 ## 📄 License
 
-© 2025 OnlineAtWork.com — All rights reserved.
+© 2025 Accept Finance — All rights reserved.
 
 ## 🤝 Contributing
 
-This is a proprietary project for OnlineAtWork.com. For inquiries, please contact the development team.
+This is a proprietary project for Accept Finance. For inquiries, please contact the development team.
 
 ---
 
