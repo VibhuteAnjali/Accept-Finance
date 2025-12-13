@@ -1,6 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FiMail, FiTwitter, FiLinkedin, FiGithub, FiYoutube, FiPhone, FiMapPin } from 'react-icons/fi';
+import {
+  FiMail,
+  FiTwitter,
+  FiLinkedin,
+  FiGithub,
+  FiYoutube,
+  FiPhone,
+  FiMapPin
+} from 'react-icons/fi';
 import './Footer.css';
 
 const Footer = () => {
@@ -9,23 +17,14 @@ const Footer = () => {
   };
 
   const footerLinks = {
-    product: [
-      { name: 'Features', href: '#features', isRoute: false },
-      { name: 'Pricing', href: '#pricing', isRoute: false },
-      { name: 'For Teams', href: '#teams', isRoute: false },
-      { name: 'Resources', href: '#resources', isRoute: false }
-    ],
     company: [
       { name: 'About Us', href: '#about', isRoute: false },
       { name: 'Blog', href: '#blog', isRoute: false },
-      { name: 'Careers', href: '#careers', isRoute: false },
-      { name: 'Contact', href: '#contact', isRoute: false }
+      { name: 'Contact Us', href: '#contact', isRoute: false }
     ],
     legal: [
       { name: 'Privacy Policy', href: '/privacy-policy', isRoute: true },
-      { name: 'Terms of Service', href: '/terms-of-service', isRoute: true },
-      { name: 'Cookie Policy', href: '#cookies', isRoute: false },
-      { name: 'Unsubscribe', href: '#unsubscribe', isRoute: false }
+      { name: 'Terms of Service', href: '/terms-of-service', isRoute: true }
     ]
   };
 
@@ -33,32 +32,32 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-container">
         <div className="footer-top">
+          {/* Brand */}
           <div className="footer-brand">
             <div className="footer-logo">
               <div className="footer-logo-icon">
-                <span>⚡</span>
+                <span>💰</span>
               </div>
-              <span className="footer-logo-text">OnlineAtWork</span>
+              <span className="footer-logo-text">Financial Updates</span>
             </div>
             <p className="footer-tagline">
-              Empowering professionals to stay productive, connected, and inspired — wherever work happens.
+              Clear, reliable, and up-to-date financial insights to help you make smarter money decisions.
             </p>
+
             <div className="footer-social">
-              <a href="#twitter" className="social-link" aria-label="Twitter">
+              <a href="https://twitter.com/FinUpdates" className="social-link" aria-label="Twitter / X">
                 <FiTwitter />
               </a>
-              <a href="#linkedin" className="social-link" aria-label="LinkedIn">
+              <a href="https://linkedin.com" className="social-link" aria-label="LinkedIn">
                 <FiLinkedin />
               </a>
-              <a href="#github" className="social-link" aria-label="GitHub">
-                <FiGithub />
-              </a>
-              <a href="#youtube" className="social-link" aria-label="YouTube">
+              <a href="https://youtube.com" className="social-link" aria-label="YouTube">
                 <FiYoutube />
               </a>
             </div>
           </div>
 
+          {/* Links */}
           <div className="footer-links">
             <div className="footer-column">
               <h4 className="footer-column-title">Company</h4>
@@ -66,9 +65,17 @@ const Footer = () => {
                 {footerLinks.company.map((link, index) => (
                   <li key={index}>
                     {link.isRoute ? (
-                      <Link to={link.href} className="footer-link" onClick={handleRouteClick}>{link.name}</Link>
+                      <Link
+                        to={link.href}
+                        className="footer-link"
+                        onClick={handleRouteClick}
+                      >
+                        {link.name}
+                      </Link>
                     ) : (
-                      <a href={link.href} className="footer-link">{link.name}</a>
+                      <a href={link.href} className="footer-link">
+                        {link.name}
+                      </a>
                     )}
                   </li>
                 ))}
@@ -81,45 +88,53 @@ const Footer = () => {
                 {footerLinks.legal.map((link, index) => (
                   <li key={index}>
                     {link.isRoute ? (
-                      <Link to={link.href} className="footer-link" onClick={handleRouteClick}>{link.name}</Link>
+                      <Link
+                        to={link.href}
+                        className="footer-link"
+                        onClick={handleRouteClick}
+                      >
+                        {link.name}
+                      </Link>
                     ) : (
-                      <a href={link.href} className="footer-link">{link.name}</a>
+                      <a href={link.href} className="footer-link">
+                        {link.name}
+                      </a>
                     )}
                   </li>
                 ))}
               </ul>
             </div>
 
+            {/* Contact */}
             <div className="footer-column">
-              <h4 className="footer-column-title">Contact</h4>
+              <h4 className="footer-column-title">Get in Touch</h4>
+              <p className="footer-small-text">
+                Questions about credit scores, credit cards, investing, budgeting, or debt management?
+                Our team is here to help.
+              </p>
               <ul className="footer-list">
                 <li className="footer-contact-item">
-                  <FiPhone className="contact-icon" />
-                  <a href="tel:+14027868780" className="footer-link">+1-(402)-786-8780</a>
-                </li>
-                <li className="footer-contact-item">
                   <FiMail className="contact-icon" />
-                  <a href="mailto:contact@quill.com" className="footer-link">contact@quill.com</a>
-                </li>
-                <li className="footer-contact-item">
-                  <FiMapPin className="contact-icon" />
-                  <span className="footer-link">2456 North Avenue, Waverly, NE 68462</span>
+                  <a href="mailto:email@financialupdates.com" className="footer-link">
+                    email@financialupdates.com
+                  </a>
                 </li>
               </ul>
             </div>
           </div>
 
+          {/* Newsletter */}
           <div className="footer-newsletter">
             <h4 className="footer-column-title">Stay Updated</h4>
             <p className="newsletter-description">
-              Get the latest insights and resources delivered to your inbox.
+              Get the latest financial tips, credit guidance, and investing insights delivered to your inbox.
             </p>
             <form className="newsletter-form">
               <div className="input-wrapper">
                 <FiMail className="input-icon" />
-                <input 
-                  type="email" 
-                  placeholder="Enter your email" 
+                <input
+                  type="email"
+                  placeholder="Enter your email"
                   className="newsletter-input"
                 />
               </div>
@@ -134,10 +149,10 @@ const Footer = () => {
           <div className="footer-divider"></div>
           <div className="footer-bottom-content">
             <p className="footer-copyright">
-              © 2025 OnlineAtWork.com — All rights reserved.
+              © 2025 FinancialUpdates.com — All rights reserved.
             </p>
             <p className="footer-made-with">
-              Made with <span className="heart">❤️</span> for the future of work
+              Built to help Americans make smarter money decisions
             </p>
           </div>
         </div>
