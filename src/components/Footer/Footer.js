@@ -4,8 +4,8 @@ import {
   FiMail,
   FiTwitter,
   FiLinkedin,
-  FiGithub,
-  FiYoutube,
+  FiFacebook,
+  FiInstagram,
   FiPhone,
   FiMapPin
 } from 'react-icons/fi';
@@ -44,20 +44,51 @@ const Footer = () => {
               Clear, reliable, and up-to-date financial insights to help you make smarter money decisions.
             </p>
 
+            {/* Social Links */}
             <div className="footer-social">
-              <a href="https://twitter.com/FinUpdates" className="social-link" aria-label="Twitter / X">
+              <a
+                href="https://facebook.com/financialupdates"
+                className="social-link"
+                aria-label="Facebook"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FiFacebook />
+              </a>
+
+              <a
+                href="https://instagram.com/financialupdates"
+                className="social-link"
+                aria-label="Instagram"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FiInstagram />
+              </a>
+
+              <a
+                href="https://twitter.com/FinUpdates"
+                className="social-link"
+                aria-label="Twitter / X"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FiTwitter />
               </a>
-              <a href="https://linkedin.com" className="social-link" aria-label="LinkedIn">
+
+              <a
+                href="https://linkedin.com"
+                className="social-link"
+                aria-label="LinkedIn"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FiLinkedin />
-              </a>
-              <a href="https://youtube.com" className="social-link" aria-label="YouTube">
-                <FiYoutube />
               </a>
             </div>
           </div>
 
-          {/* Links */}
+          {/* Footer Links */}
           <div className="footer-links">
             <div className="footer-column">
               <h4 className="footer-column-title">Company</h4>
@@ -109,13 +140,16 @@ const Footer = () => {
             <div className="footer-column">
               <h4 className="footer-column-title">Get in Touch</h4>
               <p className="footer-small-text">
-                Questions about credit scores, credit cards, investing, budgeting, or debt management?
-                Our team is here to help.
+                Questions about credit scores, credit cards, investing, budgeting,
+                or debt management? We’re here to help.
               </p>
               <ul className="footer-list">
                 <li className="footer-contact-item">
                   <FiMail className="contact-icon" />
-                  <a href="mailto:email@financialupdates.com" className="footer-link">
+                  <a
+                    href="mailto:email@financialupdates.com"
+                    className="footer-link"
+                  >
                     email@financialupdates.com
                   </a>
                 </li>
@@ -127,7 +161,8 @@ const Footer = () => {
           <div className="footer-newsletter">
             <h4 className="footer-column-title">Stay Updated</h4>
             <p className="newsletter-description">
-              Get the latest financial tips, credit guidance, and investing insights delivered to your inbox.
+              Get the latest financial tips, credit guidance, investing trends,
+              and money-saving strategies delivered to your inbox.
             </p>
             <form className="newsletter-form">
               <div className="input-wrapper">
@@ -145,6 +180,7 @@ const Footer = () => {
           </div>
         </div>
 
+        {/* Bottom */}
         <div className="footer-bottom">
           <div className="footer-divider"></div>
           <div className="footer-bottom-content">
