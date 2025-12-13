@@ -32,7 +32,7 @@
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  color: #a5b4fc;
+  color: #7fffd4;
   text-decoration: none;
   font-size: 0.95rem;
   font-weight: 500;
@@ -79,7 +79,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 3rem;
-  color: #a5b4fc;
+  color: #7fffd4;
   z-index: 1;
 }
 
@@ -88,7 +88,7 @@
   font-size: 3.5rem;
   font-weight: 800;
   margin-bottom: 1.5rem;
-  background: linear-gradient(135deg, #ffffff, #a5b4fc);
+  background: linear-gradient(135deg, #ffffff, #7fffd4);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -117,7 +117,7 @@
 }
 
 .date-value {
-  color: #a5b4fc;
+  color: #7fffd4;
   font-weight: 600;
 }
 
@@ -146,7 +146,7 @@
   left: 0;
   right: 0;
   height: 3px;
-  background: linear-gradient(90deg, #20b2aa, #48d1cc, #ec4899);
+  background: linear-gradient(90deg, #20b2aa, #48d1cc, #40e0d0);
 }
 
 .intro-card p {
@@ -207,7 +207,7 @@
   border: 1px solid rgba(32, 178, 170, 0.3);
   border-radius: 12px;
   font-size: 1.5rem;
-  color: #a5b4fc;
+  color: #7fffd4;
   flex-shrink: 0;
 }
 
@@ -276,7 +276,7 @@
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 1.5rem;
-  background: linear-gradient(135deg, #ffffff, #a5b4fc);
+  background: linear-gradient(135deg, #ffffff, #7fffd4);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;

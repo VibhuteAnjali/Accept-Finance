@@ -10,7 +10,7 @@ const Blog = () => {
       author: 'Housing Desk',
       readTime: '7 min read',
       category: 'Real Estate',
-      gradient: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)'
+      gradient: 'linear-gradient(135deg, #20b2aa 0%, #48d1cc 100%)'
     },
     {
       title: 'S&P 500 Hits New Highs — Is the Rally Sustainable?',
@@ -18,7 +18,7 @@ const Blog = () => {
       author: 'Market Analysts',
       readTime: '8 min read',
       category: 'Stock Market',
-      gradient: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)'
+      gradient: 'linear-gradient(135deg, #48d1cc 0%, #40e0d0 100%)'
     },
     {
       title: 'Best High-Yield Savings Accounts & CDs in the U.S. (2025)',
@@ -26,7 +26,7 @@ const Blog = () => {
       author: 'Personal Finance Team',
       readTime: '6 min read',
       category: 'Banking',
-      gradient: 'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)'
+      gradient: 'linear-gradient(135deg, #20b2aa 0%, #7fffd4 100%)'
     },
     {
       title: 'Investing in America’s Industrial Renaissance',
@@ -34,7 +34,7 @@ const Blog = () => {
       author: 'Industry Insights',
       readTime: '9 min read',
       category: 'Investing',
-      gradient: 'linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)'
+      gradient: 'linear-gradient(135deg, #40e0d0 0%, #48d1cc 100%)'
     },
     {
       title: 'Crypto Adoption Surges in the U.S.: Will Bitcoin Become Mainstream by 2026?',
@@ -42,7 +42,7 @@ const Blog = () => {
       author: 'Crypto Research',
       readTime: '8 min read',
       category: 'Cryptocurrency',
-      gradient: 'linear-gradient(135deg, #fa709a 0%, #fee140 100%)'
+      gradient: 'linear-gradient(135deg, #48d1cc 0%, #7fffd4 100%)'
     },
     {
       title: 'The Student Loan Crisis Continues: What Borrowers Need to Know in 2025',
@@ -50,7 +50,7 @@ const Blog = () => {
       author: 'Education Finance',
       readTime: '7 min read',
       category: 'Student Loans',
-      gradient: 'linear-gradient(135deg, #30cfd0 0%, #330867 100%)'
+      gradient: 'linear-gradient(135deg, #20b2aa 0%, #40e0d0 100%)'
     },
     {
       title: 'U.S. Inflation Is Cooling — But Why Are Prices Still High?',
@@ -58,7 +58,7 @@ const Blog = () => {
       author: 'Economic Outlook',
       readTime: '6 min read',
       category: 'Economy',
-      gradient: 'linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%)'
+      gradient: 'linear-gradient(135deg, #7fffd4 0%, #48d1cc 100%)'
     },
     {
       title: 'The Rise of AI Jobs in the U.S.: How It Will Change Income & Careers',
@@ -66,7 +66,7 @@ const Blog = () => {
       author: 'Future of Work',
       readTime: '8 min read',
       category: 'Careers',
-      gradient: 'linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%)'
+      gradient: 'linear-gradient(135deg, #40e0d0 0%, #7fffd4 100%)'
     },
     {
       title: '10 Smart Money Moves Every American Should Make Before 2026',
@@ -74,7 +74,7 @@ const Blog = () => {
       author: 'Money Guide',
       readTime: '10 min read',
       category: 'Personal Finance',
-      gradient: 'linear-gradient(135deg, #f6d365 0%, #fda085 100%)'
+      gradient: 'linear-gradient(135deg, #48d1cc 0%, #20b2aa 100%)'
     }
   ];
 
