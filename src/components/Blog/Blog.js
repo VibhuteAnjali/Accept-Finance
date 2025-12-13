@@ -84,7 +84,7 @@ const Blog = () => {
     author: 'Federal Policy Watch',
     readTime: '9 min read',
     category: 'Featured',
-    gradient: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)'
+    gradient: 'linear-gradient(135deg, #20b2aa 0%, #48d1cc 100%)'
   };
 
   return (
