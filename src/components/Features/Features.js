@@ -9,28 +9,28 @@ const Features = () => {
       title: 'Credit Score Tips & Guidance',
       description:
         'Understand how credit scores work (FICO vs VantageScore), how to boost your score safely, how long negative marks last, and how to build excellent credit with consistency.',
-      color: '#6366f1'
+      color: '#20b2aa'
     },
     {
       icon: <FiUsers />,
       title: 'Credit Card Tips & Smart Usage',
       description:
         'Find the best credit cards for beginners, rewards and cashback cards, balance transfer options, and learn how to avoid high interest, fees, and hidden charges.',
-      color: '#8b5cf6'
+      color: '#48d1cc'
     },
     {
       icon: <FiBookOpen />,
       title: 'Debt Management Strategies',
       description:
         'Simple, proven strategies to pay off high-interest debt faster, avoid minimum payment traps, improve your credit, and regain financial control.',
-      color: '#ec4899'
+      color: '#40e0d0'
     },
     {
       icon: <FiTool />,
       title: 'Loans, Credit & Mortgage Education',
       description:
         'Learn how your credit affects loan and mortgage approvals, how to qualify for better interest rates, and how to make smarter borrowing decisions.',
-      color: '#3b82f6'
+      color: '#20b2aa'
     }
   ];
 

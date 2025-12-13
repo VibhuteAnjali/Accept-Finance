@@ -1,96 +1,112 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FiArrowLeft, FiShield, FiLock, FiEye, FiMail } from 'react-icons/fi';
+import { FiArrowLeft, FiShield, FiLock, FiEye, FiMail, FiDatabase } from 'react-icons/fi';
 import './PrivacyPolicy.css';
 
 const PrivacyPolicy = () => {
   const privacyData = [
     {
-      icon: <FiMail />,
-      question: "1. Information Collection",
+      icon: <FiDatabase />,
+      question: "1. Information We Collect",
       answers: [
-        "Email Address: We collect your email address when you voluntarily subscribe to our newsletters, productivity tips, or promotional updates.",
-        "Contact Information: When you reach out to us directly through contact forms or email, we may collect your name, email address, and any other information you choose to provide.",
-        "Non-Personal Data: We may collect standard browsing information such as IP address, browser type, device information, and pages visited for analytics and website optimization purposes."
+        "Personal Information You Provide: We may collect personal information when you voluntarily submit it through forms or interactions on our website, including name, email address, phone number (if submitted), message content (via contact forms), and newsletter opt-in details.",
+        "Automatically Collected Information: When you visit the Site, we automatically collect certain information, including IP address, browser type and version, device type, operating system, referring pages, pages visited and time spent, and cookies and tracking technologies.",
+        "Financial Information Disclaimer: We do not collect sensitive financial information such as credit card numbers, bank account details, Social Security numbers, or credit reports."
       ]
     },
     {
       icon: <FiEye />,
-      question: "2. Use of Information",
+      question: "2. How We Use Your Information",
       answers: [
-        "Deliver productivity insights, work-from-home tips, and curated content directly to your inbox.",
-        "Share newsletters, promotional offers, and updates about new features you have subscribed to.",
-        "Respond promptly to your inquiries, feedback, or customer service requests.",
-        "Improve our website functionality and user experience through analytics.",
-        "Provide personalized recommendations for tools and resources that enhance your remote work experience."
+        "Provide and improve our content and services",
+        "Personalize user experience",
+        "Respond to inquiries or customer support requests",
+        "Send newsletters, updates, or promotional emails (only if you opt in)",
+        "Analyze website performance and user interactions",
+        "Maintain security and prevent fraudulent activity",
+        "Comply with legal obligations"
       ]
     },
     {
-      icon: <FiMail />,
-      question: "3. Email Communications & Opt-Out",
+      icon: <FiDatabase />,
+      question: "3. Cookies and Tracking Technologies",
       answers: [
-        "You will only receive marketing emails if you explicitly opt-in through our subscription forms.",
-        "Every promotional email includes a clearly visible unsubscribe link, allowing you to opt-out at any time.",
-        "We are committed to responsible email practices and do not send unsolicited spam or irrelevant promotions.",
-        "Transactional emails (such as account notifications) may still be sent as necessary for service delivery."
+        "We use cookies, web beacons, analytics tools (e.g., Google Analytics), and similar technologies to improve functionality, enhance user experience, track website performance, and display relevant content.",
+        "You can disable cookies through your browser settings; however, doing so may affect site functionality."
       ]
     },
     {
       icon: <FiShield />,
-      question: "4. Information Sharing & Third Parties",
+      question: "4. How We Share Your Information",
       answers: [
-        "We do not sell, rent, lease, or share your personal information with third parties for their commercial purposes.",
-        "We may use trusted third-party service providers (such as email marketing platforms) to manage and send communications. Your data is stored securely within these platforms and used solely for the intended purpose.",
-        "We may disclose information if required by law, legal process, or governmental request.",
-        "In the event of a business transfer (merger, acquisition, or sale), your information may be transferred to the new entity, subject to the same privacy protections."
+        "We do NOT sell personal information.",
+        "Service Providers: Third-party vendors who help operate the Site (analytics, email services, hosting providers).",
+        "Legal Compliance: We may disclose information if required by law, regulation, subpoenas, or government requests.",
+        "Business Transfers: In the event of a merger, acquisition, or asset sale, user information may be part of the transferred assets."
       ]
     },
     {
       icon: <FiEye />,
-      question: "5. Cookies & Tracking Technologies",
+      question: "5. Third-Party Links",
       answers: [
-        "We may use cookies, web beacons, and similar technologies to enhance your browsing experience and gather anonymous usage statistics.",
-        "These tools help us understand how visitors interact with our website, enabling us to improve content and functionality.",
-        "Most web browsers allow you to control cookies through their settings. You may disable cookies, though this may affect certain website features.",
-        "We use analytics tools to track user behavior and optimize our platform for better performance."
+        "Our Site may include links to third-party websites, tools, or financial services.",
+        "We are not responsible for the privacy practices or content of those websites.",
+        "We recommend reviewing their respective privacy policies."
       ]
     },
     {
       icon: <FiLock />,
-      question: "6. Data Security Measures",
+      question: "6. Data Security",
       answers: [
-        "We implement reasonable administrative, technical, and physical security measures to protect your personal information from unauthorized access, disclosure, alteration, or destruction.",
-        "However, no method of transmission over the internet or electronic storage is completely secure. While we strive to protect your data, we cannot guarantee absolute security.",
-        "You are responsible for maintaining the confidentiality of your account credentials and should notify us immediately of any unauthorized access.",
-        "We regularly review and update our security practices to ensure the highest level of protection."
+        "We implement appropriate technical and organizational measures to protect your data.",
+        "However, no internet transmission is 100% secure, and we cannot guarantee absolute security."
       ]
     },
     {
       icon: <FiShield />,
-      question: "7. Children's Privacy Protection",
+      question: "7. Children's Privacy",
       answers: [
-        "Our services are not directed toward individuals under the age of 13, and we do not knowingly collect personal information from children.",
-        "If we become aware that we have inadvertently collected information from a child under 13, we will take immediate steps to delete such information.",
-        "Parents or guardians who believe their child has provided us with personal information should contact us immediately."
+        "The Site is not intended for children under 13, and we do not knowingly collect information from minors.",
+        "If you believe a child has submitted information, contact us, and we will take immediate action."
       ]
     },
     {
       icon: <FiEye />,
-      question: "8. Policy Updates & Modifications",
+      question: "8. Your Rights (U.S. Residents)",
       answers: [
-        "We reserve the right to update or modify this Privacy Policy at any time to reflect changes in our practices or legal requirements.",
-        "Any changes will be posted on this page with an updated effective date.",
-        "We encourage you to review this Privacy Policy periodically to stay informed about how we protect your information.",
-        "Continued use of our services after changes are posted constitutes acceptance of the updated policy."
+        "Depending on your state, you may have privacy rights such as: Right to know what data is collected, Right to request deletion, Right to opt-out of data sharing, Right to correct inaccurate information.",
+        "Applicable state laws may include CCPA (California), CPA (Colorado), VCDPA (Virginia), etc.",
+        "To exercise your rights, contact us at: email@financialupdates.com"
       ]
     },
     {
       icon: <FiMail />,
-      question: "9. Contact Information",
+      question: "9. Email Communications and Opt-Out",
       answers: [
-        "If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us at:",
-        "Email: privacy@onlineatwork.com",
-        "We are committed to addressing your inquiries promptly and transparently."
+        "If you have subscribed to our newsletter or marketing emails, you may opt-out at any time by clicking the 'Unsubscribe' link in any email or contacting us directly."
+      ]
+    },
+    {
+      icon: <FiDatabase />,
+      question: "10. Data Retention",
+      answers: [
+        "We retain personal information only as long as necessary to provide services, comply with legal requirements, resolve disputes, and enforce agreements."
+      ]
+    },
+    {
+      icon: <FiEye />,
+      question: "11. Changes to This Privacy Policy",
+      answers: [
+        "We may update this Privacy Policy periodically.",
+        "Changes will be posted on this page with an updated 'Last Updated' date."
+      ]
+    },
+    {
+      icon: <FiMail />,
+      question: "12. Contact Us",
+      answers: [
+        "If you have any questions, feedback, or privacy requests, please contact us:",
+        "Email: email@financialupdates.com"
       ]
     }
   ];
@@ -115,11 +131,11 @@ const PrivacyPolicy = () => {
             </div>
             <h1 className="privacy-hero-title">Privacy Policy</h1>
             <p className="privacy-hero-subtitle">
-              Your privacy is important to us. This policy outlines how we collect, use, and protect your information.
+              Welcome to Financial Updates. We value your privacy and are committed to protecting your personal information.
             </p>
             <div className="privacy-date">
               <span className="date-label">Last Updated:</span>
-              <span className="date-value">November 9, 2025</span>
+              <span className="date-value">January 2025</span>
             </div>
           </div>
         </div>
@@ -130,13 +146,13 @@ const PrivacyPolicy = () => {
           <div className="privacy-intro">
             <div className="intro-card">
               <p>
-                At <strong className="brand-name">OnlineAtWork</strong>, we are committed to protecting your privacy and ensuring transparency 
-                in how we handle your personal information. This Privacy Policy describes our practices regarding 
-                data collection, usage, and protection when you interact with our website and services.
+                Welcome to <strong className="brand-name">Financial Updates</strong> ("Company," "we," "us," or "our"). 
+                We value your privacy and are committed to protecting your personal information. This Privacy Policy 
+                explains how we collect, use, disclose, and safeguard your information when you visit our website 
+                ("Site").
               </p>
               <p>
-                We believe in empowering professionals with the tools and knowledge they need while respecting 
-                their privacy and data rights. This policy reflects our dedication to maintaining your trust.
+                By accessing or using our Site, you agree to the terms outlined in this Privacy Policy.
               </p>
             </div>
           </div>
@@ -166,15 +182,11 @@ const PrivacyPolicy = () => {
             <div className="footer-note-icon">
               <FiShield />
             </div>
-            <h3>Your Rights</h3>
+            <h3>Your Privacy Matters</h3>
             <p>
-              Depending on your jurisdiction, you may have certain rights regarding your personal information, 
-              including the right to access, correct, delete, or restrict the processing of your data. To 
-              exercise these rights, please contact us using the information provided above.
-            </p>
-            <p>
-              We are committed to honoring your privacy rights and will respond to all legitimate requests 
-              within the timeframe required by applicable law.
+              We are committed to protecting your privacy and will continue to update our practices to ensure 
+              the highest level of data protection. If you have any concerns or questions, please don't hesitate 
+              to contact us.
             </p>
           </div>
 

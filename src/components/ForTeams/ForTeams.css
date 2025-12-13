@@ -1,7 +1,7 @@
 .for-teams {
   padding: 8rem 2rem;
   position: relative;
-  background: linear-gradient(180deg, transparent, rgba(99, 102, 241, 0.03), transparent);
+  background: linear-gradient(180deg, transparent, rgba(32, 178, 170, 0.03), transparent);
 }
 
 .for-teams-container {
@@ -41,7 +41,7 @@
 
 .offering-item:hover {
   background: rgba(255, 255, 255, 0.05);
-  border-color: rgba(99, 102, 241, 0.4);
+  border-color: rgba(32, 178, 170, 0.4);
   transform: translateX(10px);
 }
 
@@ -51,8 +51,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, rgba(99, 102, 241, 0.2), rgba(139, 92, 246, 0.2));
-  border: 1px solid rgba(99, 102, 241, 0.3);
+  background: linear-gradient(135deg, rgba(32, 178, 170, 0.2), rgba(72, 209, 204, 0.2));
+  border: 1px solid rgba(32, 178, 170, 0.3);
   border-radius: 12px;
   font-size: 1.5rem;
   color: #a5b4fc;
@@ -91,8 +91,8 @@
 .for-teams-quote {
   position: relative;
   padding: 2rem;
-  background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(139, 92, 246, 0.1));
-  border-left: 4px solid #6366f1;
+  background: linear-gradient(135deg, rgba(32, 178, 170, 0.1), rgba(72, 209, 204, 0.1));
+  border-left: 4px solid #20b2aa;
   border-radius: 12px;
   margin: 3rem 0;
 }
@@ -102,7 +102,7 @@
   top: -10px;
   left: 20px;
   font-size: 4rem;
-  color: #6366f1;
+  color: #20b2aa;
   opacity: 0.3;
   font-family: Georgia, serif;
 }
@@ -120,18 +120,18 @@
   padding: 1.25rem 2.5rem;
   font-size: 1.1rem;
   font-weight: 700;
-  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  background: linear-gradient(135deg, #20b2aa, #48d1cc);
   color: white;
   border: none;
   border-radius: 12px;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 10px 40px rgba(99, 102, 241, 0.4);
+  box-shadow: 0 10px 40px rgba(32, 178, 170, 0.4);
 }
 
 .teams-cta-button:hover {
   transform: translateY(-3px);
-  box-shadow: 0 15px 50px rgba(99, 102, 241, 0.6);
+  box-shadow: 0 15px 50px rgba(32, 178, 170, 0.6);
 }
 
 .for-teams-visual {
@@ -156,7 +156,7 @@
 
 .stat-card:hover {
   background: rgba(255, 255, 255, 0.05);
-  border-color: rgba(99, 102, 241, 0.4);
+  border-color: rgba(32, 178, 170, 0.4);
   transform: translateY(-5px);
 }
 
@@ -168,7 +168,7 @@
 .stat-value {
   font-size: 2.5rem;
   font-weight: 800;
-  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  background: linear-gradient(135deg, #20b2aa, #48d1cc);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -192,7 +192,7 @@
   width: 80px;
   height: 80px;
   background: rgba(255, 255, 255, 0.05);
-  border: 2px solid rgba(99, 102, 241, 0.3);
+  border: 2px solid rgba(32, 178, 170, 0.3);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -204,8 +204,8 @@
 
 .team-circle:hover {
   transform: scale(1.1);
-  border-color: rgba(99, 102, 241, 0.6);
-  box-shadow: 0 10px 30px rgba(99, 102, 241, 0.3);
+  border-color: rgba(32, 178, 170, 0.6);
+  box-shadow: 0 10px 30px rgba(32, 178, 170, 0.3);
 }
 
 .circle-1 {
@@ -239,14 +239,14 @@
   transform: translate(-50%, -50%);
   width: 100px;
   height: 100px;
-  background: linear-gradient(135deg, rgba(99, 102, 241, 0.2), rgba(139, 92, 246, 0.2));
-  border: 3px solid rgba(99, 102, 241, 0.5);
+  background: linear-gradient(135deg, rgba(32, 178, 170, 0.2), rgba(72, 209, 204, 0.2));
+  border: 3px solid rgba(32, 178, 170, 0.5);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 2.5rem;
-  box-shadow: 0 0 40px rgba(99, 102, 241, 0.4);
+  box-shadow: 0 0 40px rgba(32, 178, 170, 0.4);
   animation: pulse 3s ease-in-out infinite;
 }
 

@@ -78,13 +78,22 @@ const Footer = () => {
               </a>
 
               <a
-                href="https://linkedin.com"
+                href="https://linkedin.com/company/financialupdates"
                 className="social-link"
                 aria-label="LinkedIn"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <FiLinkedin />
+              </a>
+              <a
+                href="https://threads.net/financialupdates"
+                className="social-link"
+                aria-label="Threads"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FiTwitter />
               </a>
             </div>
           </div>

@@ -1,81 +1,89 @@
-import React from 'react';
-import { FiArrowRight, FiPlay } from 'react-icons/fi';
+import React, { useState, useEffect } from 'react';
+import { FiArrowRight } from 'react-icons/fi';
 import './Hero.css';
 
 const Hero = () => {
+  const taglines = [
+    "Real Insights. Real Trends. Real Financial Power.",
+    "Money doesn't grow overnight — but smart decisions do.",
+    "Financial freedom begins with financial awareness.",
+    "Financial success is not magic — it's discipline.",
+    "Small investments today become big opportunities tomorrow."
+  ];
+
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % taglines.length);
+    }, 5000);
+    return () => clearInterval(interval);
+  }, [taglines.length]);
+
   return (
     <section className="hero" id="home">
       <div className="hero-container">
         <div className="hero-content">
           <div className="hero-badge">
             <span className="badge-dot"></span>
-            <span>Empowering the Future of Work</span>
+            <span>Financial Updates</span>
           </div>
           
-          <h1 className="hero-title">
-            Work Smarter,
-            <span className="gradient-text"> Anywhere</span>
-          </h1>
+          <div className="tagline-slider">
+            <div className="tagline-container">
+              {taglines.map((tagline, index) => (
+                <h1
+                  key={index}
+                  className={`hero-title ${index === currentIndex ? 'active' : ''}`}
+                >
+                  {tagline}
+                </h1>
+              ))}
+            </div>
+            <div className="slider-indicators">
+              {taglines.map((_, index) => (
+                <button
+                  key={index}
+                  className={`indicator ${index === currentIndex ? 'active' : ''}`}
+                  onClick={() => setCurrentIndex(index)}
+                  aria-label={`Go to slide ${index + 1}`}
+                />
+              ))}
+            </div>
+          </div>
           
           <p className="hero-description">
-            Empowering professionals to stay productive, connected, and inspired — 
-            wherever work happens. Experience the perfect blend of human creativity 
-            and AI-powered efficiency.
+            Get expert-backed advice on improving your credit score, choosing the right credit cards, 
+            and managing debt responsibly. Financial Updates gives you simple, reliable tips to build 
+            a stronger financial future.
           </p>
           
           <div className="hero-buttons">
             <button className="primary-button">
-              Get Started
+              Explore Services
               <FiArrowRight className="button-icon" />
             </button>
             <button className="secondary-button">
-              <FiPlay className="button-icon" />
-              Watch Demo
+              Read Articles
             </button>
-          </div>
-
-          <div className="hero-stats">
-            <div className="stat-item">
-              <div className="stat-number">50K+</div>
-              <div className="stat-label">Active Users</div>
-            </div>
-            <div className="stat-divider"></div>
-            <div className="stat-item">
-              <div className="stat-number">98%</div>
-              <div className="stat-label">Satisfaction</div>
-            </div>
-            <div className="stat-divider"></div>
-            <div className="stat-item">
-              <div className="stat-number">24/7</div>
-              <div className="stat-label">Support</div>
-            </div>
           </div>
         </div>
 
         <div className="hero-visual">
           <div className="visual-container">
-            <div className="floating-card card-1">
-              <div className="card-icon">🚀</div>
-              <div className="card-text">Productivity</div>
-            </div>
-            <div className="floating-card card-2">
-              <div className="card-icon">🤝</div>
-              <div className="card-text">Collaboration</div>
-            </div>
-            <div className="floating-card card-3">
-              <div className="card-icon">🎓</div>
-              <div className="card-text">Learning</div>
-            </div>
-            <div className="floating-card card-4">
-              <div className="card-icon">🧠</div>
-              <div className="card-text">AI-Powered</div>
-            </div>
-            
-            <div className="central-orb">
-              <div className="orb-ring ring-1"></div>
-              <div className="orb-ring ring-2"></div>
-              <div className="orb-ring ring-3"></div>
-              <div className="orb-core"></div>
+            <div className="investment-tips-slider">
+              {taglines.map((tagline, index) => (
+                <div
+                  key={index}
+                  className={`tip-card ${index === currentIndex ? 'active' : ''}`}
+                >
+                  <div className="tip-icon">💡</div>
+                  <div className="tip-content">
+                    <h3 className="tip-title">Investment Tip</h3>
+                    <p className="tip-text">{tagline}</p>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
         </div>

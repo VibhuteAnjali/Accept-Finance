@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { FiMenu, FiX } from 'react-icons/fi';
 import './Header.css';
 
@@ -15,39 +16,52 @@ const Header = () => {
   }, []);
 
   const navLinks = [
-    { name: 'Home', href: '#home' },
-    { name: 'About', href: '#about' },
-    { name: 'Features', href: '#features' },
-    { name: 'For Teams', href: '#teams' },
-    { name: 'Blog', href: '#blog' }
+    { name: 'Home', href: '/', isRoute: true },
+    { name: 'Services', href: '/services', isRoute: true },
+    { name: 'Blog', href: '/blog', isRoute: true },
+    { name: 'About', href: '/about', isRoute: true },
+    { name: 'Contact', href: '/contact', isRoute: true }
   ];
 
   return (
     <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
       <div className="header-container">
-        <div className="logo">
+        <Link to="/" className="logo">
           <div className="logo-icon">
             <div className="logo-pulse"></div>
-            <span className="logo-symbol">⚡</span>
+            <span className="logo-symbol">💰</span>
           </div>
-          <span className="logo-text">OnlineAtWork</span>
-        </div>
+          <span className="logo-text">Financial Updates</span>
+        </Link>
 
         <nav className={`nav ${isMobileMenuOpen ? 'mobile-open' : ''}`}>
           {navLinks.map((link, index) => (
-            <a 
-              key={index} 
-              href={link.href} 
-              className="nav-link"
-              onClick={() => setIsMobileMenuOpen(false)}
-            >
-              {link.name}
-            </a>
+            link.isRoute ? (
+              <Link
+                key={index}
+                to={link.href}
+                className="nav-link"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                {link.name}
+              </Link>
+            ) : (
+              <a
+                key={index}
+                href={link.href}
+                className="nav-link"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                {link.name}
+              </a>
+            )
           ))}
-          <button className="cta-button">Get Started</button>
+          <Link to="/subscribe" className="cta-button">
+            Subscribe
+          </Link>
         </nav>
 
-        <button 
+        <button
           className="mobile-menu-toggle"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           aria-label="Toggle menu"
