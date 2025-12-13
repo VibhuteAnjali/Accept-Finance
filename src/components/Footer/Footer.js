@@ -32,6 +32,7 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-container">
         <div className="footer-top">
+
           {/* Brand */}
           <div className="footer-brand">
             <div className="footer-logo">
@@ -88,7 +89,7 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Footer Links */}
+          {/* Links */}
           <div className="footer-links">
             <div className="footer-column">
               <h4 className="footer-column-title">Company</h4>
@@ -136,7 +137,7 @@ const Footer = () => {
               </ul>
             </div>
 
-            {/* Contact */}
+            {/* Get in Touch */}
             <div className="footer-column">
               <h4 className="footer-column-title">Get in Touch</h4>
               <p className="footer-small-text">
@@ -144,6 +145,12 @@ const Footer = () => {
                 or debt management? We’re here to help.
               </p>
               <ul className="footer-list">
+                <li className="footer-contact-item">
+                  <FiPhone className="contact-icon" />
+                  <a href="tel:+14027868780" className="footer-link">
+                    +1 (402) 786-8780
+                  </a>
+                </li>
                 <li className="footer-contact-item">
                   <FiMail className="contact-icon" />
                   <a
