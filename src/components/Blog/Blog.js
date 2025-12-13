@@ -5,60 +5,84 @@ import './Blog.css';
 const Blog = () => {
   const blogPosts = [
     {
-      title: '5 Ways to Beat Distractions While Working from Home',
-      excerpt: 'Discover proven strategies to maintain focus and productivity in your home office environment.',
-      author: 'Sarah Johnson',
-      readTime: '5 min read',
-      category: 'Productivity',
+      title: 'Is America Headed Toward a Buyer’s Market?',
+      excerpt: 'Home price trends in major cities, growing inventory, mortgage availability, and whether buyers should act now or wait.',
+      author: 'Housing Desk',
+      readTime: '7 min read',
+      category: 'Real Estate',
       gradient: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)'
     },
     {
-      title: 'Top 10 AI Tools That Boost Workplace Productivity',
-      excerpt: 'Explore cutting-edge AI solutions that are transforming how we work and collaborate.',
-      author: 'Michael Chen',
+      title: 'S&P 500 Hits New Highs — Is the Rally Sustainable?',
+      excerpt: 'An in-depth look at the AI-driven rally, market winners, valuation risks, and analyst predictions for 2025–26.',
+      author: 'Market Analysts',
       readTime: '8 min read',
-      category: 'Technology',
+      category: 'Stock Market',
       gradient: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)'
     },
     {
-      title: 'How to Build Company Culture in a Remote World',
-      excerpt: 'Learn effective strategies for fostering connection and engagement in distributed teams.',
-      author: 'Emily Rodriguez',
+      title: 'Best High-Yield Savings Accounts & CDs in the U.S. (2025)',
+      excerpt: 'Compare current APYs, top banks, online vs traditional options, and smart saving strategies.',
+      author: 'Personal Finance Team',
       readTime: '6 min read',
-      category: 'Leadership',
+      category: 'Banking',
       gradient: 'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)'
     },
     {
-      title: 'Ergonomics 101: Setting Up the Perfect Home Office',
-      excerpt: 'Essential tips for creating a comfortable and healthy workspace at home.',
-      author: 'David Park',
-      readTime: '7 min read',
-      category: 'Wellness',
+      title: 'Investing in America’s Industrial Renaissance',
+      excerpt: 'EV manufacturing, chip fabs, robotics, government incentives, and top industrial stocks & ETFs.',
+      author: 'Industry Insights',
+      readTime: '9 min read',
+      category: 'Investing',
       gradient: 'linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)'
     },
     {
-      title: 'From Playtime to Programming: Encouraging Early Digital Literacy',
-      excerpt: 'Innovative approaches to introduce children to technology and coding fundamentals.',
-      author: 'Lisa Thompson',
-      readTime: '10 min read',
-      category: 'Education',
+      title: 'Crypto Adoption Surges in the U.S.: Will Bitcoin Become Mainstream by 2026?',
+      excerpt: 'U.S. crypto regulations, Bitcoin ETF performance, adoption trends, and best practices for new investors.',
+      author: 'Crypto Research',
+      readTime: '8 min read',
+      category: 'Cryptocurrency',
       gradient: 'linear-gradient(135deg, #fa709a 0%, #fee140 100%)'
     },
     {
-      title: 'The Future of Learning: AI and Technology in Education',
-      excerpt: 'How artificial intelligence is revolutionizing educational experiences for children.',
-      author: 'James Wilson',
-      readTime: '9 min read',
-      category: 'Education',
+      title: 'The Student Loan Crisis Continues: What Borrowers Need to Know in 2025',
+      excerpt: 'Federal repayment updates, SAVE plan changes, forgiveness rules, and strategies for managing debt.',
+      author: 'Education Finance',
+      readTime: '7 min read',
+      category: 'Student Loans',
       gradient: 'linear-gradient(135deg, #30cfd0 0%, #330867 100%)'
+    },
+    {
+      title: 'U.S. Inflation Is Cooling — But Why Are Prices Still High?',
+      excerpt: 'A breakdown of sticky inflation across housing, groceries, insurance, and healthcare, and what relief may come.',
+      author: 'Economic Outlook',
+      readTime: '6 min read',
+      category: 'Economy',
+      gradient: 'linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%)'
+    },
+    {
+      title: 'The Rise of AI Jobs in the U.S.: How It Will Change Income & Careers',
+      excerpt: 'Top-paying AI jobs, skills Americans should learn, automation risks, and job security through 2030.',
+      author: 'Future of Work',
+      readTime: '8 min read',
+      category: 'Careers',
+      gradient: 'linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%)'
+    },
+    {
+      title: '10 Smart Money Moves Every American Should Make Before 2026',
+      excerpt: 'From maximizing retirement accounts to preparing for market volatility, a practical financial checklist.',
+      author: 'Money Guide',
+      readTime: '10 min read',
+      category: 'Personal Finance',
+      gradient: 'linear-gradient(135deg, #f6d365 0%, #fda085 100%)'
     }
   ];
 
   const featuredPost = {
-    title: 'Bridging Minds: The Symbiosis Between Human Intelligence and Artificial Intelligence',
-    excerpt: 'In the modern era, the line between human cognition and artificial intelligence continues to blur. Explore how human creativity and AI-powered efficiency create the perfect partnership for innovation.',
-    author: 'Dr. Alex Martinez',
-    readTime: '12 min read',
+    title: 'How It Will Impact Mortgages, Credit Cards & Savings',
+    excerpt: 'Expected Fed rate cuts, mortgage and credit card rate changes, loan trends, and what U.S. consumers should do now.',
+    author: 'Federal Policy Watch',
+    readTime: '9 min read',
     category: 'Featured',
     gradient: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)'
   };
@@ -69,16 +93,16 @@ const Blog = () => {
         <div className="blog-header">
           <span className="section-tag">From Our Blog</span>
           <h2 className="section-title">
-            Latest <span className="gradient-text">Insights & Stories</span>
+            Latest <span className="gradient-text">U.S. Financial Insights</span>
           </h2>
           <p className="section-description">
-            Expert advice, industry trends, and practical tips for the modern workplace
+            Market trends, economic analysis, and smart money strategies for Americans
           </p>
         </div>
 
         <div className="featured-post">
           <div className="featured-content">
-            <div className="featured-badge">Featured Article</div>
+            <div className="featured-badge">Featured Analysis</div>
             <h3 className="featured-title">{featuredPost.title}</h3>
             <p className="featured-excerpt">{featuredPost.excerpt}</p>
             <div className="featured-meta">
@@ -99,8 +123,8 @@ const Blog = () => {
           <div className="featured-visual">
             <div className="visual-orb"></div>
             <div className="visual-text">
-              <div className="visual-emoji">🤝</div>
-              <div className="visual-label">Human + AI</div>
+              <div className="visual-emoji">🇺🇸</div>
+              <div className="visual-label">U.S. Economy</div>
             </div>
           </div>
         </div>
@@ -108,8 +132,8 @@ const Blog = () => {
         <div className="blog-grid">
           {blogPosts.map((post, index) => (
             <article key={index} className="blog-card">
-              <div 
-                className="blog-card-header" 
+              <div
+                className="blog-card-header"
                 style={{ background: post.gradient }}
               >
                 <span className="blog-category">{post.category}</span>
