@@ -1,98 +1,130 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { FiArrowLeft, FiFileText, FiCheckCircle, FiAlertCircle, FiMail, FiLock } from 'react-icons/fi';
+import {
+  FiArrowLeft,
+  FiFileText,
+  FiCheckCircle,
+  FiAlertCircle,
+  FiMail,
+  FiLock
+} from 'react-icons/fi';
 import './TermsOfService.css';
 
 const TermsOfService = () => {
   const termsData = [
     {
       icon: <FiCheckCircle />,
-      title: "1. Use of Our Website",
+      title: '1. Use of Our Website',
       content: [
-        "Our website provides productivity tips, remote work resources, and professional development information for educational purposes only.",
-        "You agree to use our website and email services in a lawful and respectful manner.",
-        "You must not misuse the site (e.g., upload harmful content, spam, or attempt to disrupt functionality).",
-        "By accessing or using our website and subscribing to our email updates, you agree to these Terms of Service."
-      ]
-    },
-    {
-      icon: <FiMail />,
-      title: "2. Email Subscription",
-      content: [
-        "By subscribing with your email, you agree to receive periodic productivity updates, newsletters, work-from-home tips, and resources from us.",
-        "You can unsubscribe at any time by clicking the unsubscribe link in our emails.",
-        "We do not send spam, sell, or share your email address with third parties for marketing purposes.",
-        "We are committed to responsible email practices and respect your inbox."
+        'You agree to use this website only for lawful purposes and in accordance with these Terms.',
+        'You must not violate any U.S. federal, state, or local laws.',
+        'You must not attempt to disrupt, damage, or interfere with the website’s functionality.',
+        'You may not use automated tools such as bots or scrapers without written permission.',
+        'You may not copy, sell, scrape, or misuse any content published on this site.'
       ]
     },
     {
       icon: <FiAlertCircle />,
-      title: "3. Content Disclaimer",
+      title: '2. Informational Purposes Only (Not Financial Advice)',
       content: [
-        "The information provided on OnlineAtWork.com is for general informational and educational purposes only.",
-        "We do our best to provide accurate and reliable information, but we make no guarantees about the completeness, reliability, or accuracy of this information.",
-        "Any action you take based on the information found on this website is strictly at your own risk.",
-        "We recommend consulting with qualified professionals for specific advice related to your situation."
-      ]
-    },
-    {
-      icon: <FiLock />,
-      title: "4. Privacy",
-      content: [
-        "Your privacy is important to us. Please review our Privacy Policy to understand how we collect and use your information.",
-        "We collect only the information necessary to provide you with our services and improve your experience.",
-        "We implement appropriate security measures to protect your personal information.",
-        "You have rights regarding your personal data as outlined in our Privacy Policy."
-      ]
-    },
-    {
-      icon: <FiFileText />,
-      title: "5. Intellectual Property",
-      content: [
-        "All content (articles, images, graphics, resources, and tools) on this website is the property of OnlineAtWork.com, unless otherwise noted.",
-        "You may not copy, distribute, or reproduce our content without express written permission.",
-        "Trademarks, logos, and service marks displayed on the website are the property of OnlineAtWork or their respective owners.",
-        "Unauthorized use of our intellectual property may violate copyright, trademark, and other laws."
-      ]
-    },
-    {
-      icon: <FiAlertCircle />,
-      title: "6. Limitation of Liability",
-      content: [
-        "OnlineAtWork.com is not liable for any direct or indirect damages arising from the use of our content or email communications.",
-        "We provide information and resources 'as is' without warranties of any kind, either express or implied.",
-        "In no event shall OnlineAtWork be liable for any loss of profits, data, or other intangible losses.",
-        "Some jurisdictions do not allow limitations on implied warranties, so these limitations may not apply to you."
+        'All content on Financial Updates is provided for general informational and educational purposes only.',
+        'We do not provide financial, legal, tax, or investment advice.',
+        'We do not offer credit repair, debt settlement, or personalized financial recommendations.',
+        'You should consult a licensed financial advisor, CPA, or attorney before making financial decisions.'
       ]
     },
     {
       icon: <FiCheckCircle />,
-      title: "7. Third-Party Links",
+      title: '3. User Responsibilities',
       content: [
-        "Our website or emails may contain links to third-party sites, tools, or resources.",
-        "We are not responsible for the content, practices, policies, or availability of those external websites.",
-        "The inclusion of any link does not imply endorsement by OnlineAtWork.",
-        "You access third-party websites at your own risk and should review their terms and privacy policies."
+        'Any decisions you make based on our content are your sole responsibility.',
+        'You agree not to rely exclusively on our content for major financial actions.',
+        'You accept all risks associated with using financial information online.'
+      ]
+    },
+    {
+      icon: <FiAlertCircle />,
+      title: '4. Accuracy of Information',
+      content: [
+        'We strive to provide accurate and up-to-date information.',
+        'We do not guarantee accuracy, completeness, or timeliness of any content.',
+        'Financial products, interest rates, and credit card offers change frequently.',
+        'We are not responsible for outdated, incorrect, or incomplete information.'
       ]
     },
     {
       icon: <FiFileText />,
-      title: "8. Changes to Terms",
+      title: '5. External Links & Third-Party Content',
       content: [
-        "We may update these Terms of Service from time to time to reflect changes in our practices or for legal reasons.",
-        "Any changes will be posted on this page with an updated effective date.",
-        "Continued use of our website or email services after changes are posted means you accept the updated terms.",
-        "We encourage you to review these Terms periodically to stay informed."
+        'Our website may contain links to third-party websites or financial services.',
+        'We do not control or endorse third-party websites unless explicitly stated.',
+        'We do not guarantee the accuracy of external content.',
+        'You access third-party links at your own risk and should review their terms and privacy policies.'
+      ]
+    },
+    {
+      icon: <FiCheckCircle />,
+      title: '6. Affiliate Disclosure',
+      content: [
+        'Financial Updates may participate in affiliate marketing programs.',
+        'We may earn a commission when you click a link or apply for a financial product.',
+        'These commissions do not affect the price you pay.',
+        'Recommendations are based on research but may be influenced by partnerships.',
+        'Sponsored or affiliate content is disclosed when applicable.'
+      ]
+    },
+    {
+      icon: <FiFileText />,
+      title: '7. Intellectual Property Rights',
+      content: [
+        'All website content including text, graphics, images, logos, videos, and design is the property of Financial Updates unless otherwise stated.',
+        'You may not copy, reproduce, or redistribute our content without written permission.',
+        'You may not use our brand name or logo without express consent.'
+      ]
+    },
+    {
+      icon: <FiLock />,
+      title: '8. User-Generated Content (If Applicable)',
+      content: [
+        'If you submit comments, feedback, or other content, you grant us a non-exclusive license to use it.',
+        'You confirm you own the rights to any content you submit.',
+        'You must not post illegal, harmful, or defamatory material.',
+        'We reserve the right to remove user-generated content at our discretion.'
+      ]
+    },
+    {
+      icon: <FiAlertCircle />,
+      title: '9. Limitation of Liability',
+      content: [
+        'To the fullest extent permitted under U.S. law, Financial Updates is not liable for financial losses or damages.',
+        'We are not responsible for decisions made based on our content.',
+        'We are not liable for technical issues, downtime, or data breaches.',
+        'Your use of this website is entirely at your own risk.'
+      ]
+    },
+    {
+      icon: <FiLock />,
+      title: '10. Privacy',
+      content: [
+        'Your use of this website is also governed by our Privacy Policy.',
+        'We encourage you to review our Privacy Policy to understand how your information is handled.'
+      ]
+    },
+    {
+      icon: <FiFileText />,
+      title: '11. Changes to Our Terms',
+      content: [
+        'We may update these Terms of Service from time to time.',
+        'When changes occur, the “Last Updated” date will be modified.',
+        'Continued use of the website means acceptance of the revised Terms.'
       ]
     },
     {
       icon: <FiMail />,
-      title: "9. Contact Us",
+      title: '12. Contact Information',
       content: [
-        "For questions regarding these Terms of Service, please contact us at:",
-        "Email: contact@onlineatwork.com",
-        "We will respond to all inquiries in a timely and professional manner.",
-        "Your feedback and questions are important to us."
+        'If you have questions about these Terms of Service, please contact us:',
+        'Email: email@financialupdates.com'
       ]
     }
   ];
@@ -110,6 +142,7 @@ const TermsOfService = () => {
             <FiArrowLeft />
             <span>Back to Home</span>
           </Link>
+
           <div className="terms-hero-content">
             <div className="terms-icon-wrapper">
               <div className="terms-icon-bg"></div>
@@ -117,10 +150,10 @@ const TermsOfService = () => {
             </div>
             <h1 className="terms-hero-title">Terms of Service</h1>
             <p className="terms-hero-subtitle">
-              Please read these terms carefully before using our services. By using OnlineAtWork, you agree to these terms.
+              Please read these Terms carefully before using Financial Updates.
             </p>
             <div className="terms-date">
-              <span className="date-label">Effective Date:</span>
+              <span className="date-label">Last Updated:</span>
               <span className="date-value">November 9, 2025</span>
             </div>
           </div>
@@ -129,31 +162,16 @@ const TermsOfService = () => {
 
       <section className="terms-content">
         <div className="terms-container">
-          <div className="terms-intro">
-            <div className="intro-card">
-              <p>
-                Welcome to <strong className="brand-name">OnlineAtWork</strong>. By accessing or using our website and subscribing to our email updates, 
-                you agree to these Terms of Service. Please read them carefully.
-              </p>
-              <p>
-                These Terms govern your use of our productivity resources, remote work tools, and professional development content. 
-                If you do not agree with any part of these Terms, please do not use our website or services.
-              </p>
-            </div>
-          </div>
-
           <div className="terms-sections">
             {termsData.map((section, index) => (
               <div key={index} className="terms-section">
                 <div className="section-header">
-                  <div className="section-icon">
-                    {section.icon}
-                  </div>
+                  <div className="section-icon">{section.icon}</div>
                   <h2 className="terms-section-title">{section.title}</h2>
                 </div>
                 <ul className="terms-list">
-                  {section.content.map((item, itemIndex) => (
-                    <li key={itemIndex} className="terms-list-item">
+                  {section.content.map((item, i) => (
+                    <li key={i} className="terms-list-item">
                       <span className="list-bullet"></span>
                       <span className="list-text">{item}</span>
                     </li>
@@ -161,22 +179,6 @@ const TermsOfService = () => {
                 </ul>
               </div>
             ))}
-          </div>
-
-          <div className="terms-footer-note">
-            <div className="footer-note-icon">
-              <FiAlertCircle />
-            </div>
-            <h3>Changes to Terms</h3>
-            <p>
-              We reserve the right to modify or replace these Terms at any time. If a revision is material, we will 
-              provide at least 30 days' notice prior to any new terms taking effect. What constitutes a material 
-              change will be determined at our sole discretion.
-            </p>
-            <p>
-              By continuing to access or use our services after any revisions become effective, you agree to be 
-              bound by the revised terms. If you do not agree to the new terms, you are no longer authorized to use our services.
-            </p>
           </div>
 
           <div className="terms-cta">
