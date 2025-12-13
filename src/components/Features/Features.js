@@ -6,26 +6,30 @@ const Features = () => {
   const features = [
     {
       icon: <FiTrendingUp />,
-      title: 'Productivity Resources',
-      description: 'Discover expert articles, guides, and tools to help you manage time, stay focused, and build better work habits.',
+      title: 'Credit Score Tips & Guidance',
+      description:
+        'Understand how credit scores work (FICO vs VantageScore), how to boost your score safely, how long negative marks last, and how to build excellent credit with consistency.',
       color: '#6366f1'
     },
     {
       icon: <FiUsers />,
-      title: 'Team Collaboration',
-      description: 'Learn how to lead remote teams, improve communication, and use technology to stay connected.',
+      title: 'Credit Card Tips & Smart Usage',
+      description:
+        'Find the best credit cards for beginners, rewards and cashback cards, balance transfer options, and learn how to avoid high interest, fees, and hidden charges.',
       color: '#8b5cf6'
     },
     {
       icon: <FiBookOpen />,
-      title: 'Professional Development',
-      description: 'Access online courses and workshops designed to level up your digital skills, leadership abilities, and work efficiency.',
+      title: 'Debt Management Strategies',
+      description:
+        'Simple, proven strategies to pay off high-interest debt faster, avoid minimum payment traps, improve your credit, and regain financial control.',
       color: '#ec4899'
     },
     {
       icon: <FiTool />,
-      title: 'Digital Tools',
-      description: 'Explore a curated selection of software, templates, and platforms that make online work easier — from task management to AI productivity boosters.',
+      title: 'Loans, Credit & Mortgage Education',
+      description:
+        'Learn how your credit affects loan and mortgage approvals, how to qualify for better interest rates, and how to make smarter borrowing decisions.',
       color: '#3b82f6'
     }
   ];
@@ -34,19 +38,19 @@ const Features = () => {
     <section className="features" id="features">
       <div className="features-container">
         <div className="features-header">
-          <span className="section-tag">What We Offer</span>
+          <span className="section-tag">Our Services</span>
           <h2 className="section-title">
-            Everything You Need to <span className="gradient-text">Thrive Online</span>
+            Take Control of Your <span className="gradient-text">Financial Future</span>
           </h2>
           <p className="section-description">
-            Comprehensive resources and tools designed for the modern digital workplace
+            Expert-backed guidance to improve your credit score, manage debt, and make smarter financial decisions
           </p>
         </div>
 
         <div className="features-grid">
           {features.map((feature, index) => (
-            <div 
-              key={index} 
+            <div
+              key={index}
               className="feature-card"
               style={{ '--feature-color': feature.color }}
             >
@@ -72,13 +76,14 @@ const Features = () => {
         <div className="features-cta">
           <div className="cta-card">
             <div className="cta-content">
-              <h3 className="cta-title">Ready to transform your work?</h3>
+              <h3 className="cta-title">Build a Stronger Financial Future</h3>
               <p className="cta-description">
-                Join thousands of professionals who are already working smarter with OnlineAtWork
+                Improve your credit score, choose the right credit cards, and manage debt responsibly with clear,
+                trustworthy financial guidance.
               </p>
             </div>
             <button className="cta-button-large">
-              Get Started Free
+              Explore Financial Tips
             </button>
           </div>
         </div>
