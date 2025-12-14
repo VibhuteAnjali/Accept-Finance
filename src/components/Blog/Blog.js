@@ -5,7 +5,7 @@ import './Blog.css';
 const Blog = () => {
   const blogPosts = [
     {
-      title: 'Is America Headed Toward a Buyer’s Market?',
+      title: 'Is America Headed Toward a Buyer\'s Market?',
       excerpt: 'Home price trends in major cities, growing inventory, mortgage availability, and whether buyers should act now or wait.',
       author: 'Housing Desk',
       readTime: '7 min read',
