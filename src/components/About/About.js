@@ -22,20 +22,13 @@ const About = () => {
             <h3 className="about-subtitle">Our Mission</h3>
 
             <p className="about-paragraph">
-              At Financial Updates, our mission is to help people make confident
-              financial decisions through clear, accurate, and practical
-              information. We break down complex topics like credit, debt,
-              investing, and economic trends into insights that are easy to
-              understand and apply in real life.
-            </p>
+  At Financial Updates, we help people make confident financial decisions with clear, practical guidance on credit, debt, investing, and economic trends.
+</p>
 
-            <p className="about-paragraph">
-              We believe financial freedom begins with awareness, discipline, and
-              smart choices over time. By focusing on education—not hype—we aim
-              to empower individuals to build stronger financial habits, protect
-              their financial future, and navigate a changing economy with
-              clarity and confidence.
-            </p>
+<p className="about-paragraph">
+  We focus on education and smart choices to empower individuals to build strong financial habits and secure their financial future.
+</p>
+
 
             <div className="about-features">
               <div className="about-feature">
