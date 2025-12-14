@@ -14,10 +14,12 @@
 }
 
 .features-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-  margin-bottom: 5rem;
+display: grid;
+grid-gap: 2rem; /* or gap: 2rem; */
+grid-template-columns: repeat(2, 1fr);
+margin-bottom: 5rem;
+justify-items: start;
+align-content: center;
 }
 
 .feature-card {
