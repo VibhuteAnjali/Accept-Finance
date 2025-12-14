@@ -26,13 +26,13 @@ const Header = () => {
   return (
     <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
       <div className="header-container">
-        <Link to="/" className="logo">
+        <p className="logo">
           <div className="logo-icon">
             <div className="logo-pulse"></div>
             <span className="logo-symbol">💰</span>
           </div>
           <span className="logo-text">Financial Updates</span>
-        </Link>
+        </p>
 
         <nav className={`nav ${isMobileMenuOpen ? 'mobile-open' : ''}`}>
           {navLinks.map((link, index) => (
