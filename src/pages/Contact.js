@@ -50,9 +50,6 @@ const Contact = () => {
               <div className="section-header">
                 <FiMail className="section-icon" />
                 <h2 className="section-title">Get in Touch</h2>
-                <p className="section-description">
-                  Send us a message and our team will respond as soon as possible.
-                </p>
               </div>
               <form className="contact-form" onSubmit={handleSubmit}>
                 <div className="form-group">
