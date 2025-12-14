@@ -8,7 +8,7 @@ const Hero = () => {
     "Money doesn't grow overnight — but smart decisions do.",
     "Financial freedom begins with financial awareness.",
     "Financial success is not magic — it's discipline.",
-    "Small investments today become big opportunities tomorrow."
+    "Small investments today become big tomorrow."
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
