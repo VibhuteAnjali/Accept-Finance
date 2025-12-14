@@ -44,20 +44,20 @@ const Footer = () => {
 
             {/* Social Links */}
             <div className="footer-social">
-              <a href="https://facebook.com/financialupdates" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="social-link">
-                <FiFacebook size={24} color="#4267B2" />
+              <a href="https://facebook.com/financialupdates" target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="social-link-icon">
+                <FiFacebook size={24} color="#ffffff" />
               </a>
-              <a href="https://instagram.com/financialupdates" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="social-link">
-                <FiInstagram size={24} color="#C13584" />
+              <a href="https://instagram.com/financialupdates" target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="social-link-icon">
+                <FiInstagram size={24} color="#ffffff" />
               </a>
-              <a href="https://twitter.com/FinUpdates" target="_blank" rel="noopener noreferrer" aria-label="Twitter" className="social-link">
-                <FiTwitter size={24} color="#1DA1F2" />
+              <a href="https://twitter.com/FinUpdates" target="_blank" rel="noopener noreferrer" aria-label="Twitter" className="social-link-icon">
+                <FiTwitter size={24} color="#ffffff" />
               </a>
-              <a href="https://linkedin.com/company/financialupdates" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="social-link">
-                <FiLinkedin size={24} color="#0077B5" />
+              <a href="https://linkedin.com/company/financialupdates" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="social-link-icon">
+                <FiLinkedin size={24} color="#ffffff" />
               </a>
-              <a href="https://threads.net/financialupdates" target="_blank" rel="noopener noreferrer" aria-label="Threads" className="social-link">
-                <FiTwitter size={24} color="#000000" />
+              <a href="https://threads.net/financialupdates" target="_blank" rel="noopener noreferrer" aria-label="Threads" className="social-link-icon">
+                <FiTwitter size={24} color="#ffffff" />
               </a>
             </div>
           </div>
