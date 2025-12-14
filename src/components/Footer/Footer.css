@@ -72,7 +72,7 @@
 
 .footer-social {
   display: flex;
-  gap: 0.5rem; /* Reduced gap to remove extra padding */
+  gap: 1rem; /* Reduced gap to remove extra padding */
 }
 
 .social-link {
