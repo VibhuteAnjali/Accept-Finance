@@ -56,9 +56,6 @@ const Footer = () => {
               <a href="https://linkedin.com/company/financialupdates" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" className="social-link-icon">
                 <FiLinkedin size={24} color="#ffffff" />
               </a>
-              <a href="https://threads.net/financialupdates" target="_blank" rel="noopener noreferrer" aria-label="Threads" className="social-link-icon">
-                <FiTwitter size={24} color="#ffffff" />
-              </a>
             </div>
           </div>
 
