@@ -53,9 +53,7 @@ const Hero = () => {
           </div>
           
           <p className="hero-description">
-            Get expert-backed advice on improving your credit score, choosing the right credit cards, 
-            and managing debt responsibly. Financial Updates gives you simple, reliable tips to build 
-            a stronger financial future.
+           Get expert tips on boosting your credit score, choosing smart credit cards, and managing debt for a stronger financial future.
           </p>
           
           <div className="hero-buttons">
