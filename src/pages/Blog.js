@@ -14,7 +14,7 @@ const Blog = () => {
       gradient: 'linear-gradient(135deg, #20b2aa, #48d1cc)'
     },
     {
-      title: 'Is America Headed Toward a Buyer's Market?',
+      title: 'Is America Headed Toward a Buyer&apos;s Market?',
       excerpt: 'Home price trends in major cities, mortgage availability, why inventory is starting to grow, best places where prices may drop, and should you buy or wait?',
       author: 'Housing Desk',
       readTime: '7 min read',
@@ -38,7 +38,7 @@ const Blog = () => {
       gradient: 'linear-gradient(135deg, #40e0d0, #48d1cc)'
     },
     {
-      title: 'Investing in America's Industrial Renaissance',
+      title: 'Investing in America&apos;s Industrial Renaissance',
       excerpt: 'Rise of EV manufacturing, chip fabs, and robotics. U.S. incentives (CHIPS Act, green energy credits), top industrial stocks & ETFs, long-term outlook, and risks to be aware of.',
       author: 'Industry Insights',
       readTime: '9 min read',
@@ -54,7 +54,7 @@ const Blog = () => {
       gradient: 'linear-gradient(135deg, #48d1cc, #20b2aa)'
     },
     {
-      title: 'The Student Loan Crisis Continues: What Borrowers Need to Know in 2025',
+      title: 'The Student Loan Crisis Continues, What Borrowers Need to Know in 2025',
       excerpt: 'Latest changes to federal repayment programs, SAVE plan updates, forgiveness rules, how interest will grow in 2025, and financial strategies for borrowers.',
       author: 'Education Finance',
       readTime: '7 min read',
