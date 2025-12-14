@@ -1,5 +1,5 @@
 import React from 'react';
-import { FiTrendingUp, FiUsers, FiBookOpen, FiTool } from 'react-icons/fi';
+import { FiTrendingUp, FiUsers, FiBookOpen, FiTool,FiCreditCard ,FiShield,FiDollarSign } from 'react-icons/fi';
 import './Features.css';
 
 const Features = () => {
@@ -12,21 +12,21 @@ const Features = () => {
       color: '#20b2aa'
     },
     {
-      icon: <FiUsers />,
+      icon: <FiCreditCard />,
       title: 'Credit Card Tips & Smart Usage',
       description:
         'Find the best credit cards for beginners, rewards and cashback cards, balance transfer options, and learn how to avoid high interest, fees, and hidden charges.',
       color: '#48d1cc'
     },
     {
-      icon: <FiBookOpen />,
+      icon: <FiShield />,
       title: 'Debt Management Strategies',
       description:
         'Simple, proven strategies to pay off high-interest debt faster, avoid minimum payment traps, improve your credit, and regain financial control.',
       color: '#40e0d0'
     },
     {
-      icon: <FiTool />,
+      icon: <FiDollarSign />,
       title: 'Loans, Credit & Mortgage Education',
       description:
         'Learn how your credit affects loan and mortgage approvals, how to qualify for better interest rates, and how to make smarter borrowing decisions.',
