@@ -51,7 +51,6 @@ const Contact = () => {
                 <FiMail className="section-icon" />
                 <h2 className="section-title">Get in Touch</h2>
                 <p className="section-description">
-                  Have a question about credit scores, credit cards, investing, budgeting, or debt management? 
                   Send us a message and our team will respond as soon as possible.
                 </p>
               </div>
